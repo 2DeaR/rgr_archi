@@ -1,0 +1,53 @@
+Script started on 2024-11-13 14:08:25+07:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="120" LINES="30"]
+cl[?2004h]0;root@zxcking1337: ~/rgr_archiroot@zxcking1337:~/rgr_archi# clcl[K[Kear
+[?2004l[H[2J[3J[?2004h]0;root@zxcking1337: ~/rgr_archiroot@zxcking1337:~/rgr_archi# clear[3Plscd /etc/nginx/[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgit push
+[?2004lerror: src refspec refs/heads/main does not match any
+[31merror: failed to push some refs to 'https://github.com/2DeaR/rgr_archi'
+[m[?2004h]0;root@zxcking1337: ~/rgr_archiroot@zxcking1337:~/rgr_archi# git sa[K[Kadd .
+[?2004l[?2004h]0;root@zxcking1337: ~/rgr_archiroot@zxcking1337:~/rgr_archi# git commit - [Km "Add Jenksi[K[K[Kkinsfile"
+[?2004l[main (root-commit) 8f9eb60] Add Jenkinsfile
+ Committer: root <root@zxcking1337>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 36 insertions(+)
+ create mode 100644 Jenkinsfile
+ create mode 100644 {
+[?2004h]0;root@zxcking1337: ~/rgr_archiroot@zxcking1337:~/rgr_archi# git commit -m "Add Jenkinsfile"add .[K[1Ppush
+[?2004lUsername for 'https://github.com': 2da De   DeaR
+Password for 'https://2DeaR@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/2DeaR/rgr_archi/'
+[?2004h]0;root@zxcking1337: ~/rgr_archiroot@zxcking1337:~/rgr_archi# git pushcommit -m "Add Jenkinsfile"push[K
+[?2004lUsername for 'https://github.com': 2DeaR
+Password for 'https://2DeaR@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/2DeaR/rgr_archi/'
+[?2004h]0;root@zxcking1337: ~/rgr_archiroot@zxcking1337:~/rgr_archi# git push[K[K[K[K[K[K[K[Kgit commit -m "Add Jenkinsfile"add .[K[1Ppush
+[?2004lUsername for 'https://github.com': 2DeaR
+Password for 'https://2DeaR@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/2DeaR/rgr_archi/'
+[?2004h]0;root@zxcking1337: ~/rgr_archiroot@zxcking1337:~/rgr_archi# git push
+[?2004lUsername for 'https://github.com': 2DeaR
+Password for 'https://2DeaR@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/2DeaR/rgr_archi/'
+[?2004h]0;root@zxcking1337: ~/rgr_archiroot@zxcking1337:~/rgr_archi# git push
+[?2004lUsername for 'https://github.com': 2Da eaR
+Password for 'https://2DeaR@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.gi
