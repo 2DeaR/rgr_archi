@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/2DeaR/rgr_archi.git'
+                checkout scm
             }
         }
         stage('Build Docker Image') {
