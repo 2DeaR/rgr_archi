@@ -1,36 +1,41 @@
 pipeline {
-    agent any
+    agent any  // Запуск на любом доступном агенте Jenkins
+    
+    environment {
+        DOCKER_IMAGE_NAME = "rgr_archi_image"
+        CONTAINER_NAME = "rgr_archi_container"
+    }
+    
     stages {
         stage('Clone Repository') {
             steps {
-                // Клонируем ваш репозиторий
-                git 'https://github.com/2DeaR/rgr_archi.git'
+                // Клонирование репозитория из GitHub
+                git branch: 'main', url: 'https://github.com/2DeaR/rgr_archi.git'
             }
         }
+
         stage('Build Docker Image') {
             steps {
-                script {
-                    // Собираем Docker-образ
-                    dockerImage = docker.build("rgr_archi_image")
-                }
+                // Построение Docker-образа
+                sh 'docker build -t ${DOCKER_IMAGE_NAME} .'
             }
         }
+
         stage('Deploy') {
             steps {
-                script {
-                    // Останавливаем и удаляем старый контейнер, если он запущен
-                    sh 'docker stop rgr_archi_container || true && docker rm rgr_archi_container || true'
-                    
-                    // Запускаем новый контейнер с обновлённым образом
-                    dockerImage.run("--name rgr_archi_container --network jenkins-network")
-                }
+                // Остановка старого контейнера (если существует)
+                sh 'docker stop ${CONTAINER_NAME} || true'
+                sh 'docker rm ${CONTAINER_NAME} || true'
+                // Запуск нового контейнера с обновленным образом
+                sh 'docker run -d --name ${CONTAINER_NAME} -p 8000:8000 ${DOCKER_IMAGE_NAME}'
             }
         }
     }
+
     post {
         always {
-            // Очищаем старые ненужные образы Docker
-            sh 'docker image prune -f'
+            // После выполнения всегда можно выполнить чистку или другие действия
+            echo "Pipeline execution complete."
         }
     }
 }
